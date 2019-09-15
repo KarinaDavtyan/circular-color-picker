@@ -4,16 +4,20 @@
   "description": "Circular color picker for react native projects",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint **/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Karina Davtyan",
   "license": "MIT",
   "dependencies": {
+    "react-native-svg": "^9.9.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-native": "^3.7.0",
-    "react-native-svg": "^9.9.3"
+    "eslint-plugin-react-native": "^3.7.0"
   },
   "peerDependencies": {
     "react": "^16.9.0",
