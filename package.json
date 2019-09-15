@@ -1,6 +1,6 @@
 {
   "name": "color-picker-react-native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Circular color picker for react native projects",
   "main": "index.js",
   "scripts": {
