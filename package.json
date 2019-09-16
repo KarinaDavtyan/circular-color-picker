@@ -1,8 +1,8 @@
 {
   "name": "color-picker-react-native",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Circular color picker for react native projects",
-  "main": "./src/ColorPicker",
+  "main": "src/ColorPicker",
   "scripts": {
     "lint": "eslint **/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,7 @@
     "react-native-svg": "^9.9.3"
   },
   "devDependencies": {
+    "babel-preset-react-native": "^4.0.1",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.4.0",
     "eslint-plugin-import": "^2.18.2",
