@@ -11,7 +11,8 @@ module.exports = {
     "react-native/react-native": true
   },
   root: true,
-  plugins: ["import", "react", "react-native"],
+  plugins: ["import", "react", "react-native", "babel"],
+  parser: "babel-eslint",
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
