@@ -6,7 +6,16 @@ class ColorPicker extends React.Component {
 
   static defaultProps = {
     size: 200,
-    colorArray: ['orange', 'red', 'hotpink', 'purple', 'blue', 'lightskyblue', 'springgreen', 'yellow'],
+    colorArray: [
+      'orange',
+      'red',
+      'hotpink',
+      'purple',
+      'blue',
+      'lightskyblue',
+      'springgreen',
+      'yellow'
+    ],
   }
 
   state = {
@@ -58,6 +67,7 @@ class ColorPicker extends React.Component {
         : `${x} ${y}`;
 
       //arc of the ellipse
+      // eslint-disable-next-line max-len
       const d = `M${M} A ${radiusXY} ${radiusXY} ${xAxisRotation} ${largeArcFlag} ${sweepFlag} ${finalX} ${finalY}`;
       return (
         <TouchableWithoutFeedback
