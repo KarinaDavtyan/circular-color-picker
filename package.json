@@ -2,26 +2,34 @@
   "name": "color-picker-react-native",
   "version": "1.0.3",
   "description": "Circular color picker for react native projects",
-  "main": "src/ColorPicker",
+  "main": "./lib/index.js",
   "scripts": {
     "lint": "eslint **/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepack": "npx babel src --out-dir lib"
   },
   "author": "Karina Davtyan",
   "license": "MIT",
-  "dependencies": {
-    "react-native-svg": "^9.9.3"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "babel-preset-react-native": "^4.0.1",
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "add": "^2.0.6",
     "babel-eslint": "^10.0.3",
+    "babel-preset-react-native": "^4.0.1",
     "eslint": "^6.4.0",
+    "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-native": "^3.7.0"
+    "eslint-plugin-react-native": "^3.7.0",
+    "metro-react-native-babel-preset": "^0.58.0"
   },
   "peerDependencies": {
-    "react": "^16.9.0",
-    "react-native": "^0.60.5"
+    "react": "16.13.1",
+    "react-native": "0.63.3",
+    "react-native-svg": "^12.1.0"
   }
 }

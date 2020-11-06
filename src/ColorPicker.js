@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableWithoutFeedback } from 'react-native';
-import { Svg } from 'react-native-svg';
+import Svg, { Path, Circle }  from 'react-native-svg';
 
 class ColorPicker extends React.Component {
 
@@ -64,7 +64,7 @@ class ColorPicker extends React.Component {
           key={color}
           onPress={() => this.chooseColor(color)}
         >
-          <Svg.Path
+          <Path
             d={d}
             fill='none'
             stroke={color}
@@ -87,7 +87,7 @@ class ColorPicker extends React.Component {
         height={size}
         width={size}
       >
-        <Svg.Circle
+        <Circle
           cx={centerX}
           cy={centerY}
           r={radiusInnerCircle}
