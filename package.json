@@ -10,6 +10,10 @@
   },
   "author": "Karina Davtyan",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KarinaDavtyan/circular-color-picker/issues"
+  },
+  "homepage": "https://github.com/KarinaDavtyan/circular-color-picker",
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.12.1",
